@@ -30,7 +30,7 @@ import com.example.Demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author LENOVO
+ * @author Akash Budhwani
  *
  */
 @Slf4j
@@ -45,7 +45,6 @@ public class UserController {
     public ResponseEntity<?> createUser(@Valid @RequestBody UserDTO userDetails) 
     {
     	log.info("Inside UserController :: createUser() ");
-    	log.debug("RequestBody =" + userDetails);
     	User user = null;
     	try
     	{
@@ -69,7 +68,6 @@ public class UserController {
     public ResponseEntity<?> updateUser(@PathVariable("id") long id, @Valid @RequestBody UserDTO userDetails) 
     {
     	log.info("Inside UserController :: updateUser() ");
-    	log.debug("RequestBody =" + userDetails);
     	try
     	{
     		User userObj = null;

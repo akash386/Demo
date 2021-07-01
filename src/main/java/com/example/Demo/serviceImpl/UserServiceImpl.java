@@ -9,6 +9,10 @@ import org.springframework.stereotype.Service;
 import com.example.Demo.domain.User;
 import com.example.Demo.repository.UserRepository;
 import com.example.Demo.service.UserService;
+/**
+ * @author Akash Budhwani
+ *
+ */
 
 @Service
 public class UserServiceImpl implements UserService {
